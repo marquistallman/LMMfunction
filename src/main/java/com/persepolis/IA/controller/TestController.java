@@ -31,7 +31,7 @@ public class TestController {
     @PostConstruct
     public void initializeConversation() {
         conversationHistory.add(new Message("system", "Eres un asistente experto en libros de ciencia ficción. Tus respuestas son amigables y concisas."));
-    }
+    } 
 
     @GetMapping("/test/chat")
     public Mono<String> chat(@RequestParam String message) {
